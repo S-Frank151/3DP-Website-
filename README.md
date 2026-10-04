@@ -1,6 +1,6 @@
 # 3DP-Website-
 
-Website for **3DP — Data Driven Decisions Partners**, a Kigali-based firm helping companies and individuals become data driven through training, data products, data-driven systems, and strategy.
+Website for **3DP (Data Driven Decisions Partners)**, a Kigali-based firm helping companies and individuals become data driven through training, data products, data-driven systems, and strategy.
 
 - Original design preview (Claude artifact): https://claude.ai/artifact/1z7pjkroKX7cH38wWSiVDS
 
@@ -23,17 +23,17 @@ npm run preview  # preview the production build
 index.html               Vite entry (fonts, root element)
 src/
   main.jsx               React entry point
-  App.jsx                Page layout — composes the sections
+  App.jsx                Page layout, puts the sections together
   index.css              Tailwind import, colour tokens (dark/light), animations
-  data/content.js        All website text (nav, services, programs, sectors, contact…)
+  data/content.js        All website text (nav, services, programs, who we serve, contact…)
   components/
     Header.jsx           Sticky nav with mobile menu
     Hero.jsx             Hero section and animated chart graphic
     WhatWeDo.jsx         Train / Build / Advise pillars
     Programs.jsx         Capacity building programs
     HowWeWork.jsx        4-step engagement process
-    Sectors.jsx          Sectors list
-    Contact.jsx          Contact details and form (mockup — not wired to an inbox yet)
+    WhoWeServe.jsx       Who we serve: Startups, SMEs, Large enterprises
+    Contact.jsx          Contact details and form (mockup, not wired to an inbox yet)
     Footer.jsx           Footer links and socials
     Container.jsx        Shared max-width wrapper
     Section.jsx          Shared section shell with heading

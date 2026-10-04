@@ -8,9 +8,9 @@ export default function Header() {
   const close = () => setOpen(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-line bg-bg/88 backdrop-blur-md">
+    <header className="sticky top-[env(safe-area-inset-top,0px)] z-40 border-b border-line bg-bg/88 backdrop-blur-md">
       <Container as="nav" className="flex h-[76px] items-center justify-between">
-        <Logo showTagline />
+        <Logo />
 
         <ul
           className={`${open ? 'flex' : 'hidden'} absolute inset-x-0 top-[76px] flex-col border-b border-line bg-elevated py-2

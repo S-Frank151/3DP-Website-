@@ -19,7 +19,7 @@ export default function WhatWeDo() {
     <Section
       id="what-we-do"
       title="Three ways we help you get there"
-      intro="We meet you wherever you're starting from — whether that's a team that needs data skills, a business that needs a data product, or a strategy that needs to hold up under regulation."
+      intro="We meet you wherever you're starting from, whether that's a team that needs data skills, a business that needs a data product, or a strategy that needs to hold up under regulation."
     >
       <div className="grid grid-cols-1 gap-px overflow-hidden rounded-[10px] border border-line bg-line md:grid-cols-3">
         {pillars.map((pillar) => (

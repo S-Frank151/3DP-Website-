@@ -74,8 +74,8 @@ export default function Hero() {
             Every decision your business makes is already sitting inside your data.
           </h1>
           <p className="mt-[22px] max-w-[46ch] text-[1.08rem] text-ink-muted">
-            3DP helps companies and individuals become data driven — through training, data products, data-driven
-            systems, and strategy — so decisions stop relying on guesswork.
+            3DP helps companies and individuals become data driven through training, data products, data-driven
+            systems, and strategy, so decisions stop relying on guesswork.
           </p>
           <div className="mt-[34px] flex flex-wrap gap-3.5">
             <a href="#what-we-do" className="btn btn-primary">
