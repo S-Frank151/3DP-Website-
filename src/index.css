@@ -12,6 +12,7 @@
   --accent-ink: #1A1305;
   --accent-2: #5FA39A;
   --line: rgba(244, 239, 227, 0.14);
+  color-scheme: dark;
 }
 
 @media (prefers-color-scheme: light) {
@@ -26,6 +27,7 @@
     --accent-ink: #FFFDF7;
     --accent-2: #2C6963;
     --line: rgba(16, 27, 45, 0.13);
+    color-scheme: light;
   }
 }
 :root[data-theme="light"] {
@@ -39,6 +41,7 @@
   --accent-ink: #FFFDF7;
   --accent-2: #2C6963;
   --line: rgba(16, 27, 45, 0.13);
+  color-scheme: light;
 }
 
 /* ---------- Tailwind theme: expose tokens as utilities (bg-bg, text-ink, border-line, ...) ---------- */
@@ -70,11 +73,6 @@
   html {
     scroll-behavior: smooth;
   }
-  body {
-    @apply bg-bg font-sans text-ink antialiased;
-    font-size: 16px;
-    line-height: 1.6;
-  }
   h1, h2, h3 {
     @apply font-display font-semibold;
     letter-spacing: -0.01em;
@@ -96,6 +94,28 @@
     @apply border-line text-ink hover:border-ink-faint;
   }
 }
+
+/* Unlayered on purpose so it wins over any host page defaults (e.g. the Claude artifact viewer). */
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Logo: pick the variant that matches the theme ---------- */
+.logo-for-light {
+  display: none;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .logo-for-light { display: block; }
+  :root:not([data-theme="dark"]) .logo-for-dark { display: none; }
+}
+:root[data-theme="light"] .logo-for-light { display: block; }
+:root[data-theme="light"] .logo-for-dark { display: none; }
 
 /* ---------- Hero background + chart animation ---------- */
 .hero-dots {

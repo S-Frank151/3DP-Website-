@@ -7,7 +7,7 @@ export default function Programs() {
       id="programs"
       alt
       title="Capacity building programs"
-      intro="Two tracks, built for two different starting points — whether you're building a data career from scratch or sharpening skills around a full-time job."
+      intro="Two tracks for two different starting points. One is for building a data career from scratch, the other for sharpening skills around a full-time job."
     >
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         {programs.map((program) => (

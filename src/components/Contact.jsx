@@ -31,8 +31,8 @@ export default function Contact() {
         <div>
           <h2 className="text-2xl">Let's talk about your data</h2>
           <p className="mt-3.5 max-w-[42ch] text-ink-muted">
-            Tell us what you're working on — a team that needs training, a system that needs building, or a strategy
-            that needs direction. We'll get back to you.
+            Tell us what you're working on. Maybe your team needs training, a system needs building, or your strategy
+            needs direction. We'll get back to you.
           </p>
           <div className="mt-[30px] flex flex-col gap-3.5">
             {contactDetails.map((detail) => (
@@ -67,7 +67,7 @@ export default function Contact() {
           </button>
           <p className="mt-3.5 text-center text-[0.82rem] text-ink-faint">
             {sent
-              ? "Thanks — this is a mockup form, so nothing was actually sent. We'll wire this up to a real inbox for the live site."
+              ? "Thanks! This is a mockup form, so nothing was actually sent. We'll wire this up to a real inbox for the live site."
               : 'We usually reply within two working days.'}
           </p>
         </form>

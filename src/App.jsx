@@ -3,7 +3,7 @@ import Hero from './components/Hero.jsx';
 import WhatWeDo from './components/WhatWeDo.jsx';
 import Programs from './components/Programs.jsx';
 import HowWeWork from './components/HowWeWork.jsx';
-import Sectors from './components/Sectors.jsx';
+import WhoWeServe from './components/WhoWeServe.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 
@@ -16,7 +16,7 @@ export default function App() {
         <WhatWeDo />
         <Programs />
         <HowWeWork />
-        <Sectors />
+        <WhoWeServe />
         <Contact />
       </main>
       <Footer />
