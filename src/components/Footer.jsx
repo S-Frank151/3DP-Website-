@@ -19,9 +19,9 @@ export default function Footer() {
       <Container>
         <div className="grid grid-cols-2 gap-10 pb-10 md:grid-cols-[1.4fr_repeat(3,1fr)]">
           <div>
-            <Logo size={26} />
+            <Logo className="h-20" />
             <p className="mt-3.5 max-w-[32ch] text-[0.94rem] text-ink-muted">
-              Data Driven Decisions Partners — helping companies and individuals become data driven, through training,
+              Data Driven Decisions Partners. We help companies and individuals become data driven through training,
               products and strategy.
             </p>
           </div>
@@ -42,7 +42,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-wrap items-center justify-between gap-3.5 border-t border-line pt-6 text-[0.85rem] text-ink-faint">
-          <span>© 2026 3DP — Data Driven Decisions Partners.</span>
+          <span>© 2026 3DP, Data Driven Decisions Partners.</span>
           <div className="flex gap-3.5">
             {socials.map((s) => (
               <a

@@ -4,7 +4,7 @@ export const navLinks = [
   { href: '#what-we-do', label: 'What we do' },
   { href: '#programs', label: 'Programs' },
   { href: '#how-we-work', label: 'How we work' },
-  { href: '#sectors', label: 'Sectors' },
+  { href: '#who-we-serve', label: 'Who we serve' },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -16,7 +16,7 @@ export const pillars = [
     title: 'Train',
     text: 'We build data talent through structured, practical programs for beginners and working professionals alike.',
     items: [
-      'Data Talents Program — Data Analysis, Data Engineering and other specializations',
+      'Data Talents Program: Data Analysis, Data Engineering and other specializations',
       'Afterwork Data Analysis for Professionals',
       'Cohort-based, project-driven learning',
     ],
@@ -46,13 +46,13 @@ export const pillars = [
 export const programs = [
   {
     title: 'Data Talents Program',
-    text: 'A structured pathway into data careers, covering data analysis, data engineering, and other specializations — built to take you from foundational skills to job-ready.',
+    text: 'A structured pathway into data careers, covering data analysis, data engineering, and other specializations. It takes you from foundational skills to job-ready.',
     tracks: ['Data Analysis', 'Data Engineering', 'and more'],
     format: 'Cohort-based · full curriculum',
   },
   {
     title: 'Afterwork Data Analysis for Professionals',
-    text: 'A focused program for working professionals who want practical data analysis skills without stepping away from their jobs — designed around evenings and weekends.',
+    text: 'A focused program for working professionals who want practical data analysis skills without stepping away from their jobs. Classes run in the evenings and on weekends.',
     tracks: ['Data Analysis', 'Built for working professionals'],
     format: 'Part-time · afterwork schedule',
   },
@@ -65,7 +65,7 @@ export const steps = [
   },
   {
     title: 'Design',
-    text: 'We design a program, product, or system around your specific gap — not a generic template.',
+    text: 'We design a program, product, or system around your specific gap, not a generic template.',
   },
   {
     title: 'Build or train',
@@ -77,20 +77,30 @@ export const steps = [
   },
 ];
 
-export const sectors = [
-  'Financial services',
-  'Health',
-  'Agriculture',
-  'Public sector',
-  'Retail & commerce',
-  'Education',
-  'NGOs & development',
+export const audiences = [
+  {
+    icon: 'startups',
+    title: 'Startups',
+    text: "You're moving fast and your data is still small. We help you set up the right foundations early, so growth doesn't leave you with messy data later.",
+    items: ['Data foundations and first dashboards', 'Product and customer analytics', 'Data protection from day one'],
+  },
+  {
+    icon: 'smes',
+    title: 'SMEs',
+    text: 'Your data lives in spreadsheets, systems and paper records. We help you bring it together and use it in everyday decisions.',
+    items: ['Digitizing manual processes', 'Reporting and data products', 'Data analysis training for staff'],
+  },
+  {
+    icon: 'enterprises',
+    title: 'Large enterprises',
+    text: 'You have plenty of data and the teams to match. We help you get more value from it and keep it compliant.',
+    items: ['Data strategy and governance', 'Data-driven systems and integrations', 'Upskilling teams at scale'],
+  },
 ];
 
 export const contactDetails = [
   { label: 'Location', value: 'Kigali, Rwanda' },
-  { label: 'Email', value: 'hello@3dp.example' },
-  { label: 'Programs', value: 'programs@3dp.example' },
+  { label: 'Email', value: '3dp.rwanda@gmail.com' },
 ];
 
 export const footerColumns = [
@@ -99,7 +109,7 @@ export const footerColumns = [
     links: [
       { href: '#what-we-do', label: 'What we do' },
       { href: '#how-we-work', label: 'How we work' },
-      { href: '#sectors', label: 'Sectors' },
+      { href: '#who-we-serve', label: 'Who we serve' },
     ],
   },
   {
@@ -113,7 +123,7 @@ export const footerColumns = [
     title: 'Get in touch',
     links: [
       { href: '#contact', label: 'Contact us' },
-      { href: 'mailto:hello@3dp.example', label: 'hello@3dp.example' },
+      { href: 'mailto:3dp.rwanda@gmail.com', label: '3dp.rwanda@gmail.com' },
     ],
   },
 ];
